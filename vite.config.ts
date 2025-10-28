@@ -14,7 +14,7 @@ export default defineConfig({
         changeOrigin: true
       }
     },
-    allowedHosts: ['wahaui.offrz.in'],
+    allowedHosts: ['*'],
     port: 8095,
     host: '0.0.0.0'
   },
