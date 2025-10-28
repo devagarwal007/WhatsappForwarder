@@ -155,6 +155,14 @@ Access the **Dashboard** to:
 
 You can use this Message Forwarder for your use case to enhance your communication system. Its powerful filtering and forwarding capabilities help you manage message flow and maintain consistency across your chat groups with minimal effort.
 
+## Contributing & Questions
+
+We welcome contributions and feedback from the community!
+
+- **Report Issues:** Found a bug or have a problem? Please report it on our issues page
+- **Contribute:** Want to improve the project? Feel free to contribute with pull requests
+- **Ask Questions:** Have questions or need clarification? Don't hesitate to raise them in the issues or discussions
+
 ---
 
 If you need any help, please contact:  
