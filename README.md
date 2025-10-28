@@ -50,12 +50,12 @@ Before setting up this application, you need to create a WhatsApp session on WAH
 
 1. Access your WAHA server interface
 2. **Create a new session** with a unique session name (e.g., `default`)
-![WAHA Screenshot](https://github.com/devagarwal007/Whatsapp-Forwarder/blob/5c8b0beeaf7e695fc577720001a3223fc028acc3/waha-setup-1.jpg)
+![WAHA Screenshot](./waha-setup-1.jpg)
 3. **Setup two webhooks** in WAHA for this session:
    - **Webhook 1 (Forward Messages):** Configure this webhook to point to your WhatsAppForwarder instance
-   ![WAHA Screenshot](https://github.com/devagarwal007/Whatsapp-Forwarder/blob/5c8b0beeaf7e695fc577720001a3223fc028acc3/waha-setup-3.jpg)
+   ![WAHA Screenshot](./waha-setup-3.jpg)
    - **Webhook 2 (Revoke/Delete Messages):** Configure this webhook to handle message deletions and revocations
-   ![WAHA Screenshot](https://github.com/devagarwal007/Whatsapp-Forwarder/blob/5c8b0beeaf7e695fc577720001a3223fc028acc3/waha-setup-2.jpg)
+   ![WAHA Screenshot](./waha-setup-2.jpg)
 4. Skip the QR scanning page as this is not yet functional.
 
 ### Step 3: Install WhatsApp Forwarder
