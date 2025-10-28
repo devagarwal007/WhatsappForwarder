@@ -160,7 +160,7 @@ You can use this Message Forwarder for your use case to enhance your communicati
 If you need any help, please contact:  
 **contact@changeblogger.org**
 
-## Support this project ☕
+## Support us ☕
 
 If you find this project useful, consider buying me a coffee — it helps cover hosting and development time and motivates continued improvements.
 
