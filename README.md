@@ -1,67 +1,41 @@
-# WhatsApp Forwarder
+# Whatsapp Forwarder
 
-A web application for managing WhatsApp message forwarding rules with filters and price adjustments.
+This application is designed to help you set up and manage message forwarding between different chat groups seamlessly. It provides an intuitive and responsive interface that adapts to both light and dark modes, ensuring a consistent experience across devices and environments.
+
+![Application Screenshot](https://github.com/devagarwal007/Whatsapp-Forwarder/blob/866de8774ae88b04f7f34ec272f0b9aab1ecb0e2/image.png)
 
 ## Features
 
-- Create and manage forwarding sessions
-- Setup message forwarding rules between WhatsApp chats
-- Filter messages based on keywords or regex patterns
-- Automatically adjust prices in forwarded messages
-- Store configuration in JSON files
-- Dark/Light mode support
+- **Comprehensive Message Forwarding:**  
+  Easily configure and manage forwarding rules between different chat groups to streamline communication.
 
-## Development Setup
+- **Advanced Filtering Options:**  
+  - **Word Filters:** Forward messages that contain specific keywords.
+  - **Regex Filtering:** Use custom regular expressions to match complex message patterns.
+  - **Price Adjustment: (Optional)** Modify numeric values within messages to reflect price changes. (we use an AI agent to increase the price (for a specific use case) inside the message.)
+  - **Additional Processing:** Choose to ignore messages that include links, phone numbers, or specific media MIME types.
 
-1. Install dependencies:
-```bash
-npm install
-```
+- **User-Friendly Setup:**  
+  Set up forwarding rules quickly using a guided interface with searchable dropdown menus.
 
-2. Start the development server:
-```bash
-npm run dev
-```
+- **Responsive & Themed UI:**  
+  Enjoy a modern, responsive design that automatically adjusts for both light and dark themes, ensuring an optimal experience on any device.
 
-This will start both the Vite development server for the frontend and the Express API server.
+- **Effortless Management:**  
+  Easily view, edit, and delete your forwarding configurations through a clear and organized dashboard.
 
-## Production Build
+![Application Screenshot](https://github.com/devagarwal007/Whatsapp-Forwarder/blob/5c8b0beeaf7e695fc577720001a3223fc028acc3/image2.png)
 
-To create a static build:
+## Getting Started
 
-1. Build the application:
-```bash
-npm run build
-```
+You can use this Message Forwarder for your use case to enhance your communication system. Its powerful filtering and forwarding capabilities help you manage message flow and maintain consistency across your chat groups with minimal effort.
 
-This will:
-- Build the React frontend
-- Copy the API server and its files to the dist directory
-- Set up the necessary permissions
+---
 
-2. Start the production server:
-```bash
-npm run start
-```
+To get this application available for you, please contact:  
+**devagarwalmnnit@gmail.com**
 
-The application will be available at http://localhost:3000
 
-## Project Structure
-
-- `/src` - React frontend code
-- `/api` - Express API server
-  - `/api/data` - JSON storage directory
-- `/dist` - Production build output
-
-## API Endpoints
-
-- `GET /api/sessions` - Get all sessions
-- `POST /api/sessions` - Create a new session
-- `GET /api/sessions/:id/mappings` - Get mappings for a session
-- `POST /api/sessions/:id/mappings` - Create a new mapping
-- `DELETE /api/sessions/:sessionId/mappings/:mappingId` - Delete a mapping
-- `POST /api/forward-message` - Forward a message according to rules
-
-## Environment Variables
-
-- `PORT` - Server port (default: 3000)
+\#WhatsappAutoForwarder
+\#WhatsappForwarding
+\#WhatsappForwardingAuto
