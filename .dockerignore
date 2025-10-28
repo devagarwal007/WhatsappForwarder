@@ -1,0 +1,22 @@
+# Ignore node modules and lock files
+node_modules
+package-lock.json
+yarn.lock
+
+# Ignore build output
+dist
+
+# Ignore git repository files
+.git
+.gitignore
+
+# Ignore environment files (if not needed in the container)
+.env
+.env.local
+
+# Ignore log files
+*.log
+
+# Editor and IDE files
+.vscode
+.idea

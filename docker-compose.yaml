@@ -1,0 +1,57 @@
+version: '3'
+
+networks:
+  tele_default:
+    external: true  # Use the existing Traefik network
+
+# volumes: # Define named volumes here
+#   wahapri_sessions: #This is a named volume
+
+services:
+  # wahapri:
+  #   image: devlikeapro/waha
+  #   environment:
+  #     WHATSAPP_DEFAULT_ENGINE: NOWEB
+  #   networks:
+  #     - tele_default
+  #   deploy:
+  #     replicas: 1
+  #   volumes: # Add the volumes section here
+  #     - wahapri_sessions:/app/.sessions
+  #   labels:
+  #     - traefik.enable=true
+  #     - traefik.http.routers.wahapri.rule=Host(`wahapri.offrz.in`)
+
+  wahaui:
+    image: ghcr.io/devagarwal007/wahaui/wahaui:${GIT_COMMIT_HASH:-latest}
+    environment:
+      BASE_URL: https://wahapri.offrz.in
+    networks:
+      - tele_default
+    deploy:
+      replicas: 1
+      update_config:
+        order: stop-first
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.wahaui.rule=Host(`wahaui.offrz.in`)
+      - traefik.http.services.wahaui.loadbalancer.server.port=8080
+    #   # - traefik.http.routers.wahaui-internal.rule=Host(`wahaui.internal`)
+    #   # - traefik.http.routers.wahaui-internal.entrypoints=internal
+    #   # - traefik.http.services.wahaui-internal.loadbalancer.server.port=8080
+    # labels:
+    #   - traefik.enable=true
+
+    #   # External router
+    #   - traefik.http.routers.wahaui.rule=Host(`wahaui.offrz.in`)
+    #   - traefik.http.routers.wahaui.entrypoints=websecure
+    #   - traefik.http.routers.wahaui.tls=true
+
+    #   # Internal router
+    #   - traefik.http.routers.wahaui-internal.rule=Host(`wahaui.internal`)
+    #   - traefik.http.routers.wahaui-internal.entrypoints=internal-services
+
+    #   # Service definition
+    #   - traefik.http.services.wahaui.loadbalancer.server.port=8080
+
+
