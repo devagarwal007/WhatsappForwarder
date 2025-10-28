@@ -160,6 +160,12 @@ You can use this Message Forwarder for your use case to enhance your communicati
 If you need any help, please contact:  
 **contact@changeblogger.org**
 
+## Support this project ☕
+
+If you find this project useful, consider buying me a coffee — it helps cover hosting and development time and motivates continued improvements.
+
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/changeblogger.org)  
+Or visit: https://www.buymeacoffee.com/changeblogger.org
 
 \#WhatsappAutoForwarder
 \#WhatsappForwarding
